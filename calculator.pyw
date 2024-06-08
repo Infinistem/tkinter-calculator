@@ -18,6 +18,7 @@ def init(): #boot up the app
     screen = Entry(root, font=("Arial", 20),borderwidth=4, foreground="blue", textvariable=user_input)
     screen.place(width=400,height=70)
     # you can use a loop to generate the buttons, although for a small scale, it does not really matter, so i just copy and pasted
+    # super ugly ik
     Bttn_1 = Button(root, command=lambda:input(screen, '1', user_input),text="1", width=6, height=3, background="lightgrey",takefocus=False, highlightthickness=0, highlightcolor="#37d3ff", highlightbackground="#37d3ff", relief=SUNKEN, borderwidth=0, font=("Arial", 15)).place(x=40, y=77)
     Bttn_2 = Button(root, command=lambda:input(screen, '2', user_input),text="2", width=6, height=3, background="lightgrey",takefocus=False, highlightthickness=0, highlightcolor="#37d3ff", highlightbackground="#37d3ff", relief=SUNKEN, borderwidth=0, font=("Arial", 15)).place(x=120, y=77)
     Bttn_3 = Button(root, command=lambda:input(screen, '3', user_input),text="3", width=6, height=3, background="lightgrey",takefocus=False, highlightthickness=0, highlightcolor="#37d3ff", highlightbackground="#37d3ff", relief=SUNKEN, borderwidth=0, font=("Arial", 15)).place(x=200, y=77)
